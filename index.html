@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <header>
+  <div class="header-left">
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <img id="profile-img" src="images/profile.jpg" alt="My profile photo" />
+  </div>
+</header>
+
+
+  <main>
+    <section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I'm David Sturrock, a passionate web developer who loves building interactive, user-friendly websites and applications. I enjoy learning new technologies and continuously improving my skills in HTML, CSS, and JavaScript.
+  </p>
+  <p>
+    When I'm not coding, I enjoy [e.g., reading tech blogs, hiking, or playing video games]. I'm currently open to new opportunities and collaborations!
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <img src="images/html.png" alt="HTML" />
+      <p>HTML</p>
+    </div>
+    <div class="skill">
+      <img src="images/css.png" alt="CSS" />
+      <p>CSS</p>
+    </div>
+    <div class="skill">
+      <img src="images/javascript.png" alt="JavaScript" />
+      <p>JavaScript</p>
+    </div>
+    <div class="skill">
+      <img src="images/react.png" alt="React" />
+      <p>React</p>
+    </div>
+    <div class="skill">
+      <img src="images/git.png" alt="Git" />
+      <p>Git</p>
+    </div>
+    <div class="skill">
+      <img src="images/github.png" alt="GitHub" />
+      <p>GitHub</p>
+    </div>
+  </div>
+</section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project" id="project1">
+        <h3>Project One</h3>
+        <p>Short description of project one.</p>
+        <button onclick="toggleDetails('project1-details')">More Info</button>
+        <div id="project1-details" class="details" style="display:none;">
+          <p>Technology used: HTML, CSS, JavaScript</p>
+          <p>More detailed info...</p>
+        </div>
+      </div>
+
+      <!-- Repeat for other projects -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

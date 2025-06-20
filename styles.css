@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  background: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent; /* Can be transparent or a color */
+  z-index: 1000; /* Keeps it on top of other content */
+}
+
+.header-container {
+  width: 90%;
+  background-color: white; /* Slight transparency */
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.project {
+  background: white;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.details {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#about {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+#about p {
+  line-height: 1.6;
+  color: black;
+}
+
+#skills {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 14px;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left h1 {
+  margin: 0;
+}
+
+nav a {
+  color: black;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.header-right img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+#theme-toggle {
+  margin-left: 15px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.85); /* or use #fff with opacity */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate360 1s ease-in-out;
+}
