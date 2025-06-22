@@ -17,7 +17,7 @@ header {
 }
 
 .header-container {
-  width: 90%;
+  width: 80%;
   background-color: white; /* Slight transparency */
   padding: 15px 20px;
   border-radius: 15px;
@@ -115,6 +115,7 @@ header {
 .header-left {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header-left h1 {
@@ -128,11 +129,12 @@ nav a {
 }
 
 .header-right img {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid white;
+  padding-right: 40px; /* Adjust as needed */
 }
 
 #theme-toggle {
@@ -163,3 +165,329 @@ main {
 .rotate {
   animation: rotate360 1s ease-in-out;
 }
+
+#profile-img {
+  margin-left: 40px;
+  width: 95px;  /* Increase as needed */
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Basic styling */
+#nav-menu {
+  display: none;
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  left: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Toggle visibility with a class */
+#nav-menu.show {
+  display: block;
+}
+
+#menu-toggle {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+  padding-left: 40px; /* Adjust as needed */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px;    /* Ensures bullets aren't cut off */
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#nav-menu.hidden {
+  display: none;
+}
+
+/* Responsive dropdown behavior */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  #nav-menu.show {
+    display: block;
+  }
+}
+
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.below-skills-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.below-skills-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.below-about-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.below-about-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+  margin-top: 6rem; /* Add more spacing from the top */
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact label {
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#contact button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-links img {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+.blog-main {
+  padding: 8rem 1rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-main h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-post {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.blog-post h2 {
+  color: #004080;
+}
+
+.blog-post .date {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.center-image {
+  text-align: center;
+}
+
+.center-image img {
+  max-width: 50%;
+  height: auto;
+}
+
+.contact-banner {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container form {
+  flex: 2;
+  min-width: 300px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: center;
+  align-items: center; /* Center the boxes horizontally */
+  gap: 1rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-box {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px; /* Optional: limit box width */
+}
+
+.info-box h3 {
+  margin-top: 0;
+}
+
+.location-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.map-container {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.inverted {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.inverted img,
+.inverted video,
+.inverted iframe {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+  .swiper {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      display: block;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .tile {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.03);
+    }
+  

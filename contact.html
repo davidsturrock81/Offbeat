@@ -1,30 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-  <div class="header-left">
-    <h1>Hi, I'm David Sturrock</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-  <div class="header-right">
-    <img src="images/profile.jpg" alt="My profile photo" />
-  </div>
-  <button id="theme-toggle">Toggle Dark Mode</button>
-</header>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Me</title>
+  <title>Off Beat Design - About</title>
   <link rel="stylesheet" href="styles.css" />
+  
 </head>
+
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <h1>Contact Me</h1>
-  <p>Email: your@email.com</p>
+ <header>
+  <div class="header-left">
+    <!-- Menu toggle icon -->
+    <img id="menu-toggle" src="images/menu-button.png" alt="Menu" />
+
+    <!-- Dropdown navigation menu -->
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <!-- Profile image -->
+    <img id="profile-img" src="images/profile.jpg" alt="My profile photo" />
+  </div>
+</header>
+
+<body>
+
+<section id="contact">
+  <img src="images/contact-banner.jpg" alt="Get in Touch" class="contact-banner" />
+
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/manjdlzq" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+<div class="call-box">
+      <h3>Prefer to Call?</h3>
+      <p>📞 <strong>07474 327549</strong></p>
+      <p>Available Mon–Fri, 9am–5pm</p>
+    </div>
+
+      <div class="info-box email-box">
+        <h3>Prefer to Email?</h3>
+        <p>📧 <a href="mailto:david.sturrock@outlook.com">david.sturrock@outlook.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Section -->
+  <div class="location-section">
+    <h3>Our Location</h3>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.01197082368!2d-0.5103751469979507!3d51.2867601956679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875b8b6b6f2b0f9%3A0x2b4d9693f42e037d!2sSurrey!5e0!3m2!1sen!2suk!4v1718800000000" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  
+</section>
+
+<div class="social-links">
+  <a href="https://www.facebook.com/offbeatcompany" target="_blank">
+    <img src="images/facebook.png" alt="Facebook" />
+  </a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank">
+    <img src="images/instagram.png" alt="Instagram" />
+  </a>
+  <a href="https://www.linkedin.com/in/david-sturrock-08543864/" target="_blank">
+    <img src="images/linkedin.png" alt="LinkedIn" />
+  </a>
+  <a href="https://www.youtube.com/@davidinsiam" target="_blank">
+    <img src="images/youtube.png" alt="Youtube" />
+  </a>
+</div>
+
+
+  <script src="script.js"></script>
 </body>
+
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2023 Off Beat. All rights reserved.</p>
+    <p>Made with passion and creativity.</p>
+  </div>
+</footer>
+
 </html>

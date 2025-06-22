@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Off Beat Design - Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <header>
+  <div class="header-left">
+    <!-- Menu toggle icon -->
+    <img id="menu-toggle" src="images/menu-button.png" alt="Menu" />
+
+    <!-- Dropdown navigation menu -->
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <!-- Profile image -->
+    <img id="profile-img" src="images/profile.jpg" alt="My profile photo" />
+  </div>
+</header>
+
+<body>
+
+  <div class="header">
+    <h1>My Tiled Website</h1>
+    <p>With smooth scroll and slideshow</p>
+  </div>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://via.placeholder.com/800x400?text=Slide+1" /></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/800x400?text=Slide+2" /></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/800x400?text=Slide+3" /></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="grid-container">
+    <div class="tile">Block 1</div>
+    <div class="tile">Block 2</div>
+    <div class="tile">Block 3</div>
+    <div class="tile">Block 4</div>
+    <div class="tile">Block 5</div>
+    <div class="tile">Block 6</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

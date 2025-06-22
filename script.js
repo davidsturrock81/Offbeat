@@ -1,32 +1,15 @@
-const toggleBtn = document.getElementById('theme-toggle');
+const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
 
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  // Save preference
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('theme', 'dark');
-  } else {
-    localStorage.setItem('theme', 'light');
-  }
-});
-
-// On page load, apply saved theme
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-  }
-});
-
-<script>
-  const profileImg = document.getElementById('profile-img');
-
-  profileImg.addEventListener('click', () => {
-    profileImg.classList.add('rotate');
-
-    // Remove the class after the animation ends so it can rotate again
-    profileImg.addEventListener('animationend', () => {
-      profileImg.classList.remove('rotate');
-    }, { once: true });
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    navMenu.classList.toggle('hidden');
   });
-</script>
+
+  navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+    navMenu.classList.add('hidden');
+  });
+});
+

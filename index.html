@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Off Beat Design - Homepage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
  <header>
   <div class="header-left">
+    <!-- Menu toggle icon -->
+    <img id="menu-toggle" src="images/menu-button.png" alt="Menu" />
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+    <!-- Dropdown navigation menu -->
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </div>
+
   <div class="header-right">
+    <!-- Profile image -->
     <img id="profile-img" src="images/profile.jpg" alt="My profile photo" />
   </div>
 </header>
@@ -25,14 +34,19 @@
 
   <main>
     <section id="about">
-  <h2>About Me</h2>
+  <h2>Let's go on a journey...</h2>
   <p>
-    Hello! I'm David Sturrock, a passionate web developer who loves building interactive, user-friendly websites and applications. I enjoy learning new technologies and continuously improving my skills in HTML, CSS, and JavaScript.
+    Hello! I'm David Sturrock — a dedicated web developer from Darlington with a passion for crafting interactive, user-centric websites and applications. I thrive on turning ideas into clean, functional digital experiences, and I'm continually expanding my expertise in HTML, CSS, JavaScript, React, and modern web technologies.
   </p>
   <p>
-    When I'm not coding, I enjoy [e.g., reading tech blogs, hiking, or playing video games]. I'm currently open to new opportunities and collaborations!
+    Outside of coding, I enjoy [reading tech blogs, hiking, and diving into story-driven video games] — activities that keep me inspired and balanced. I'm currently open to exciting opportunities and collaborations, so feel free to reach out!
   </p>
 </section>
+
+<div class="quote">
+  <p><em>"Life moves pretty fast, if you don't stop and look around once in a while you could miss it" – F. Buller</em></p>
+</div>
+
 
 <section id="skills">
   <h2>Skills</h2>
@@ -62,24 +76,21 @@
       <p>GitHub</p>
     </div>
   </div>
+  <div class="below-skills-image">
+  <img src="images/homepage1.jpg" alt="hompage image" />
+</div>
+
 </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project" id="project1">
-        <h3>Project One</h3>
-        <p>Short description of project one.</p>
-        <button onclick="toggleDetails('project1-details')">More Info</button>
-        <div id="project1-details" class="details" style="display:none;">
-          <p>Technology used: HTML, CSS, JavaScript</p>
-          <p>More detailed info...</p>
-        </div>
-      </div>
-
-      <!-- Repeat for other projects -->
-    </section>
   </main>
 
   <script src="script.js"></script>
 </body>
+
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2023 Off Beat. All rights reserved.</p>
+    <p>Made with passion and creativity.</p>
+  </div>
+</footer>
+
 </html>
